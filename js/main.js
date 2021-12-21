@@ -1,7 +1,7 @@
 /*----- constants -----*/
 const player = {
-    '1': 'teal',
-    '-1': 'gold',
+    "1": 'teal', //player X
+    "-1": 'gold', //player 0
     'null': 'white'
   };
   
@@ -28,8 +28,7 @@ const player = {
   document.querySelector('button').addEventListener('click', initialize);
   
   /*----- functions -----*/
-  
-  initialize();
+   initialize();
   
   function handleMove(evt) {
     const idx = parseInt(evt.target.id.replace('sq', ''));
@@ -46,17 +45,17 @@ const player = {
     }
 
     if (board.includes(null)) return null;
-    return 'T';
+    return 'Tie';
   }
   
   function render() {
     board.forEach(function(sq, idx) {
       squares[idx].style.background = player[sq];
     });
-    if (winner === 'T') {
+    if (winner === 'Tie') {
       message.innerHTML = "It's a tie!";
     } else if (winner) {
-      message.innerHTML = `${player[winner].toUpperCase()}Is the winner!`;
+      message.innerHTML = `${player[winner].toUpperCase()} Is the winner!`;
     } else {
       message.innerHTML = `${player[turn].toUpperCase()}'s Turn`;
     }

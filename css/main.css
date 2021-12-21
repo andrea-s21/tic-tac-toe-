@@ -17,38 +17,38 @@ html, body {
     }
   
     header {
-      font-size: xx-large;
+      font-size: 8vh;
+      font-family: 'Fredericka the Great', cursive;
       margin-top: 5vh;
       margin-bottom: 2vh;
       padding: 2vmin;
       color: gold;
-      text-decoration-line: underline;
+      text-decoration-line: dashed;
     }
     
     h1 {
-      font-size: large;
+      font-size: 4vh;
+      font-family: 'Fredericka the Great', cursive;
       margin-top: 5px;
       margin-bottom: 70px;
       color: gray;
     }
   
-  
     td {
-      height: 200px;
-      width: 200px;
+      height: 20vh;
+      width: 20vh;
     }
   
     td div {
       margin: 0 auto;
-      height: 50px;
-      width: 50px;
-      border-radius: 50%;
-      pointer-events: none;
+      width: 25vmin;
+      height: 25vmin;
+      pointer-events: none; 
     }
   
     #sq0, #sq1, #sq3, #sq4 {
       border-right: 4px solid teal;
-      border-bottom: 4px solid teal;
+      border-bottom: 4px solid teal; 
     }
   
     #sq2, #sq5 {
@@ -56,8 +56,8 @@ html, body {
     }
   
     #sq6, #sq7 {
-      border-right: 4px solid teal;
-    }
+      border-right: 4px solid teal; 
+    }  
   
     button {
       margin-top: 4vmin;
